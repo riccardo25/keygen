@@ -16,7 +16,7 @@ port(
 	CLK, rst_n 		: in std_logic;
 	
 	-- INPUT
---	key 				: in std_logic_vector (255 downto 0);
+	key 				: in std_logic_vector (255 downto 0);
 	key_len 			: in std_logic_vector (1 downto 0); 
 	ROUND 			: in std_logic_vector (3 downto 0);
 	enc 				: in std_logic;
@@ -30,7 +30,7 @@ end key_generator;
 architecture arc of key_generator is
 
 
-	signal key 	: std_logic_vector (255 downto 0) := X"00000000000000000000000000000000" & X"09cf4f3c" & X"abf71588" & X"28aed2a6"& X"2b7e1516";
+	--signal key 	: std_logic_vector (255 downto 0) := X"00000000000000000000000000000000" & X"09cf4f3c" & X"abf71588" & X"28aed2a6"& X"2b7e1516";
 	
 	
 	component key_interface is
